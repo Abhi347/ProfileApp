@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.noobgames.profileapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ru.egslava.blurredview.BlurredImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lion"
+            app:downSampling="2"
+            app:keepOriginal="false"
+            app:radius="0.3"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99263248"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:onClick="onCameraClick"
+            android:src="@drawable/lion"
+            app:civ_border_color="#fff"
+            app:civ_border_width="1.5dp"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_pic"
+
+            android:gravity="center"
+            android:text="Abhishek Jain"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:onClick="onMapClick">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_marker"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Vijay Nagar, Indore"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/AppTheme.TextViewLabel"
+                    android:text="Name"/>
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="Abhishek Jain"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/AppTheme.TextViewLabel"
+                    android:text="Age"/>
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="28 Years"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/AppTheme.TextViewLabel"
+                    android:text="Address"/>
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="VijayNagar"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/AppTheme.TextViewLabel"
+                    android:text="City"/>
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="Indore"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/AppTheme.TextViewLabel"
+                    android:text="School"/>
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="SALP School"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/AppTheme.TextViewLabel"
+                    android:text="Phone"/>
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="7024136043"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/AppTheme.TextViewLabel"
+                    android:text="Twitter"/>
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="\@abhi347"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/AppTheme.TextViewLabel"
+                    android:text="Facebook"/>
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:autoLink="web"
+                    android:text="http://facebook.com/abhi347"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/AppTheme.TextViewLabel"
+                    android:text="Website"/>
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="http://noobgames.in"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/AppTheme.TextViewLabel"
+                    android:text="Fav Book"/>
+
+                <TextView
+                    style="@style/AppTheme.TextView"
+                    android:text="Cosmos"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>
